@@ -4,6 +4,8 @@ Secret indexer for [helmfile2compose](https://github.com/helmfile2compose/helmfi
 
 **The Guardian** — one of the Seven Bishops, the founding extensions of the helmfile2compose distribution.
 
+> Heresy level: 0/10 — a faithful scribe, nothing more.
+
 ## Type
 
 `IndexerConverter` (priority 50)
@@ -12,10 +14,12 @@ Secret indexer for [helmfile2compose](https://github.com/helmfile2compose/helmfi
 
 - `Secret`
 
-## Note
-
-This is a **build-time only** extension, designed to be concatenated by `build-distribution.py` into a single-file distribution. It uses internal core imports that are resolved at build time. It is **not** designed for runtime loading via `--extensions-dir`.
-
 ## Install
 
-Listed in `distribution.json` — installed automatically when building a distribution via `h2c-manager`.
+Via [h2c-manager](https://github.com/helmfile2compose/h2c-manager):
+
+```sh
+python3 h2c-manager.py secret-indexer
+```
+
+Or listed in `distribution.json` — installed automatically when building a distribution.
