@@ -1,6 +1,6 @@
-# h2c-indexer-secret
+# dekube-indexer-secret
 
-Secret indexer for [helmfile2compose](https://github.com/helmfile2compose/helmfile2compose) — indexes Secret manifests into `ctx.secrets` for volume/env resolution.
+Secret indexer for [dekube](https://dekube.io) — indexes Secret manifests into `ctx.secrets` for volume/env resolution.
 
 **The Guardian** — one of the Eight Monks, the founding extensions of the helmfile2compose distribution.
 
@@ -16,10 +16,10 @@ Secret indexer for [helmfile2compose](https://github.com/helmfile2compose/helmfi
 
 ## Install
 
-Via [h2c-manager](https://github.com/helmfile2compose/h2c-manager):
+Via [dekube-manager](https://github.com/dekubeio/dekube-manager):
 
 ```sh
-python3 h2c-manager.py secret-indexer
+python3 dekube-manager.py secret-indexer
 ```
 
 Or listed in `distribution.json` — installed automatically when building a distribution.

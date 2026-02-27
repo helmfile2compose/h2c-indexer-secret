@@ -1,6 +1,6 @@
 """Secret indexer — populates ctx.secrets."""
 
-from h2c import ConverterResult, IndexerConverter  # pylint: disable=import-error  # h2c resolves at runtime
+from dekube import ConverterResult, IndexerConverter  # pylint: disable=import-error  # h2c resolves at runtime
 
 
 class SecretIndexer(IndexerConverter):  # pylint: disable=too-few-public-methods  # contract: one class, one method
